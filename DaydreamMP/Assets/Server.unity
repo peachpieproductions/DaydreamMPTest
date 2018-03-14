@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 565061920}
   - component: {fileID: 565061923}
   - component: {fileID: 565061922}
+  - component: {fileID: 565061924}
   m_Layer: 0
   m_Name: EasyWiFiManager
   m_TagString: Untagged
@@ -242,7 +243,7 @@ MonoBehaviour:
   clientConnectAutomatically: 1
   clientMaxSendRate: 0
   heartbeatTimeout: 0
-  logVerbose: 0
+  logVerbose: 1
   applicationName: EasyWiFiController
 --- !u!4 &565061919
 Transform:
@@ -311,6 +312,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   control: ServerPosX
   player: 0
+--- !u!114 &565061924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565061917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180e63437dedf3a428bd181bc17a0e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1972133373}
+  player2: {fileID: 0}
+  fsbX: {fileID: 565061923}
+  fsbZ: {fileID: 565061922}
 --- !u!1001 &774680733
 Prefab:
   m_ObjectHideFlags: 0
@@ -350,6 +366,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013061525784, guid: ce7abbbeb276a1547bd8ce1069fdabb7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce7abbbeb276a1547bd8ce1069fdabb7, type: 2}
   m_IsPrefabParent: 0
@@ -377,7 +397,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1299729515}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1299729517
 Behaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +448,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1299729515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1972133373}
