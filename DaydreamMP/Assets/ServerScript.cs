@@ -4,7 +4,6 @@ using UnityEngine;
 using EasyWiFi;
 using EasyWiFi.ServerBackchannels;
 using EasyWiFi.Core;
-using EasyWiFi.ServerControls;
 
 public class ServerScript : MonoBehaviour {
 
@@ -16,6 +15,7 @@ public class ServerScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player2 = Instantiate(player).transform;
+        player2.position += Vector3.right * 2;
 	}
 	
 	// Update is called once per frame
